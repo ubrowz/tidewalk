@@ -16,3 +16,10 @@ a { color:var(--link); }
 .back a { text-decoration:none; }
 .links { list-style:none; padding:0; }
 .links li { margin:8px 0; font-size:1.1rem; }
+.facts { list-style:none; padding:0; }
+.shots { display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin:16px 0; }
+.shots a { text-decoration:none; color:var(--muted); font-size:0.9rem; text-align:center; }
+.shots img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--rule); margin-bottom:4px; }
+.icon { display:flex; align-items:center; gap:16px; color:var(--muted); font-size:0.9rem; }
+.icon img { display:block; border-radius:26px; }
+@media (max-width:480px) { .shots { grid-template-columns:repeat(2, 1fr); } }
